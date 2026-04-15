@@ -18,6 +18,7 @@ const skills = [
   "PostgreSQL",
   "MongoDB",
   "Redis",
+  "OracleCloud",
   "Docker",
   "AWS",
   "Vercel",
@@ -28,7 +29,7 @@ const skills = [
   "Figma",
   "Git",
   "GitHub Actions",
-  "Oracle Cloud"
+  
 ];
 
 export const Hero = () => {
@@ -70,7 +71,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Web Architect • React Specialist
+                Full-Stack Web Architect • React Specialist
               </span>
             </div>
 
@@ -96,22 +97,27 @@ export const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="#contact">
+                <Button size="lg">
+                  Contact Me <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
+              <a href="/Uprojects/Victor_FullStack_Architect.pdf" 
+                  download="Victor_FullStack_Architect.pdf">
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
-                { icon: Twitter, href: "#" },
+                { icon: Github, href: "https://github.com/JacobTechLabs" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/jacobtechlabs" },
+                { icon: Twitter, href: "https://x.com/Chrisfubara" },
               ].map((social, idx) => (
                 <a
                   key={idx}
@@ -135,8 +141,8 @@ export const Hero = () => {
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/profile-photo.jpg"
-                  alt="Pedro Machado"
+                  src="/Uprojects/Fubara.png"
+                  alt="Victor Jacob"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />
 

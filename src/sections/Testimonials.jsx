@@ -8,7 +8,7 @@ const testimonials = [
     author: "I. Ubong",
     role: "Founder, Astro Integrated Farms",
     avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+      "/Uprojects/astrofarms.jpeg",
   },
   {
     quote:
@@ -16,7 +16,7 @@ const testimonials = [
     author: "T. Johnwill",
     role: "CEO, Icons Gadgets",
     avatar:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
+      "/Uprojects/iconsgadgets.png",
   },
   {
     quote:
@@ -24,7 +24,7 @@ const testimonials = [
     author: "Alpha Testers",
     role: "Bodyz Gym",
     avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+      "/Uprojects/Bodyz.png",
   },
 ];
 

@@ -2,7 +2,7 @@ const experiences = [
   {
     period: "Jan 2025 - Present",
     role: "Full-Stack Web Architect",
-    company: "Tech Innovators Inc.",
+    company: "Jacob Tech Labs",
     description:
       "Leading infrastructure development and full-stack engineering for commercial clients. Specializing in high-performance web applications, secure serverless deployments, and translating raw business requirements into load-bearing digital platforms.",
     technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
@@ -17,7 +17,7 @@ const experiences = [
   {
     period: "Feb 2026 - Present",
     role: "AI Systems & Cloud Infrastructure",
-    company: "Digital Solutions Co.",
+    company: "Self-Hosted Server Environments",
     description:
       "Provisioning and managing self-hosted cloud environments for complex artificial intelligence workloads. Focused on deep Linux system administration, containerization, and multi-agent routing.",
     responsibilities: [
@@ -32,7 +32,7 @@ const experiences = [
   {
     period: "Nov 2025 - Present",
     role: "Digital Architecture & Branding",
-    company: "StartUp Labs",
+    company: "Consulting Projects (Astro Integrated Farms)",
     description:
       "Directing digital brand architecture and developing custom web solutions for commercial entities, ensuring technical superiority aligns seamlessly with high-end visual identity.",
     responsibilities: [
@@ -45,11 +45,11 @@ const experiences = [
     current: false,
   },
   {
-    period: "2018 — 2019",
+    period: "June 2024 - Present",
     role: "Freelance Developer",
     company: "Remote Jobs",
     description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
+      "Delivered custom web solutions for small businesses and startups. Built 10+ websites and applications, handling everything from design to deployment.",
     responsibilities: [
       "Develop full-stack web platforms and specialized portals (e.g., Canine Care Division) for commercial agricultural enterprises like Astro Integrated Farms.",
       "Direct high-definition asset generation and visual branding to ensure technical and aesthetic cohesion across all touchpoints.",

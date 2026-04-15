@@ -1,28 +1,28 @@
-import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import { Server, Database, Cpu, Code2 } from "lucide-react";
 
 const highlights = [
   {
+    icon: Server,
+    title: "Cloud Infrastructure",
+    description:
+      "Provisioning heavy Linux server environments, managing Oracle Cloud instances, and secure CI/CD deployments.",
+  },
+  {
+    icon: Cpu,
+    title: "AI Agent Routing",
+    description:
+      "Deploying multi-agent reasoning frameworks (OpenClaw) and connecting raw enterprise data to LLMs.",
+  },
+  {
+    icon: Database,
+    title: "Backend Architecture",
+    description: "Structuring robust Node.js APIs, zero-downtime routing, and complex NoSQL/SQL database schemas.",
+  },
+  {
     icon: Code2,
-    title: "Clean Code",
+    title: "Frontend Execution",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
-  },
-  {
-    icon: Rocket,
-    title: "Performance",
-    description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
-  },
-  {
-    icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Innovation",
-    description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Building lightning-fast, production-ready Next.js and React interfaces to consume complex server data.",
   },
 ];
 
@@ -35,49 +35,38 @@ export const About = () => {
           <div className="space-y-8">
             <div className="animate-fade-in">
               <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
-                About Me
+                Jacob Tech Labs
               </span>
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-              Building the future,
+              Stop building with boilerplate.
               <span className="font-serif italic font-normal text-white">
                 {" "}
-                one component at a time.
+                Start designing with architecture.
               </span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I'm Victor, the Full-Stack Systems Architect behind Jacob Tech Labs. I don't just write React components; I build load-bearing web infrastructure designed to handle real traffic and complex AI routing.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                My stack is heavy. From deploying decentralized Multi-Agent systems on 24GB Oracle Cloud instances to orchestrating decoupled Node.js APIs and Next.js frontends, my focus is always on the metal beneath the code.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                Whether you are a founder trying to untangle a messy codebase, or an agency needing a reliable technical partner to offload heavy backend work, I ensure your platform is structurally sound before the first pixel is painted.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "Architecture isn't about making it look pretty on a local machine. It's about keeping the servers breathing when the grid goes down and the real traffic hits."
               </p>
             </div>
           </div>
 
-          {/* Right Column - Hilights */}
+          {/* Right Column - Highlights */}
           <div className="grid sm:grid-cols-2 gap-6">
             {highlights.map((item, idx) => (
               <div

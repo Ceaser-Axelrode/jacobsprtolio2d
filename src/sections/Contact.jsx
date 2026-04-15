@@ -14,19 +14,13 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "Hello@jacobtechlabs.xyz",
-    href: "mailto:Hello@jacobtechlabs.xyz",
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "support@jacobtechlabs.xyz",
+    href: "mailto:support@jacobtechlabs.xyz",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Rivers State, Nigeria",
     href: "#",
   },
 ];

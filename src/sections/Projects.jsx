@@ -5,7 +5,7 @@ const projects = [
     title: "Swallowed Star (Enterprise Affiliate Platform)",
     description:
       "Architected a 50-page digital affiliate dashboard from the ground up using Next.js and Supabase. Engineered secure user verification, custom payment routing, and optimized database queries to maintain speed under heavy load.",
-    image: "/projects/project1.png",
+    image: "/Uprojects/project1.png",
     tags: ["Next.js", "Supabase", "Tailwind","inngest","shadcn","typescript"],
     link: "#",
     github: "#",
@@ -14,7 +14,7 @@ const projects = [
     title: "OpenClaw Multi-Agent AI Framework",
     description:
       "Deployed a localized multi-agent reasoning system. Provisioned a 24GB Oracle Cloud Linux server to handle complex AI routing, bypassing strict networking constraints to keep autonomous agents communicating without dropping context.",
-    image: "/projects/project2.png",
+    image: "/Uprojects/project2.png",
     tags: ["Node  .js", "Oracle Cloud", "Linux", "typescript"],
     link: "#",
     github: "#",
@@ -23,20 +23,20 @@ const projects = [
     title: "Full-Stack Fitness Ecosystem (Web App & API)",
     description:
       "Architected a decoupled fitness platform for local gym deployment. Built a responsive web frontend that consumes a custom, serverless RESTful API (Node.js/Express). Engineered to handle dynamic training logic and track user metrics, with a scalable architecture designed for a future React Native mobile port.",
-    image: "/projects/project3.png",
+    image: "/Uprojects/project3.png",
     tags: ["React", "Node.js", "Express", "PostgreSQL"],
     link: "#",
     github: "#",
   },
-  {
-    title: "Project Management Tool",
-    description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
-  },
+  // {
+  //   title: "Project Management Tool",
+  //   description:
+  //     "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
+  //   image: "/projects/project4.png",
+  //   tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+  //   link: "#",
+  //   github: "#",
+  // },
 ];
 
 export const Projects = () => {
@@ -135,8 +135,11 @@ export const Projects = () => {
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
           <AnimatedBorderButton>
-            View All Projects
+            <a href="https://fubara-tech-hub.vercel.app/" target="_blank" className="text-sm md:text-base hover:underline">
+              View All Projects
+            </a>
             <ArrowUpRight className="w-5 h-5" />
+            
           </AnimatedBorderButton>
         </div>
       </div>
