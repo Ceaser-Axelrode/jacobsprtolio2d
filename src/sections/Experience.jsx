@@ -1,37 +1,61 @@
 const experiences = [
   {
-    period: "2022 — Present",
-    role: "Senior Frontend Engineer",
+    period: "Jan 2025 - Present",
+    role: "Full-Stack Web Architect",
     company: "Tech Innovators Inc.",
     description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
+      "Leading infrastructure development and full-stack engineering for commercial clients. Specializing in high-performance web applications, secure serverless deployments, and translating raw business requirements into load-bearing digital platforms.",
     technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
     current: true,
+    responsibilities: [
+      "Lead full cycle development for complex web platforms, translating raw business logic into scalable Next.js and Node.js infrastructure.",
+      "Architect database schemas using Supabase and MongoDB to ensure fast, reliable data retrieval under heavy load.",
+      "Engineer custom API endpoints and secure routing for enterprise digital platforms (e.g., Swallowed Star affiliate dashboard)",
+      "Deploy and maintain serverless backend architectures optimized for speed, security, and zero downtime scaling.",
+    ],
   },
   {
-    period: "2020 — 2022",
-    role: "Frontend Engineer",
+    period: "Feb 2026 - Present",
+    role: "AI Systems & Cloud Infrastructure",
     company: "Digital Solutions Co.",
     description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
+      "Provisioning and managing self-hosted cloud environments for complex artificial intelligence workloads. Focused on deep Linux system administration, containerization, and multi-agent routing.",
+    responsibilities: [
+      "Manage and maintain a 24GB ARM instance on Oracle Cloud, orchestrating Docker containers for local enterprise deployments.",
+      "Implement multi-agent frameworks (OpenClaw) and integrate sophisticated reasoning models for automated task execution.",
+      "Configure strict Linux networking protocols and bypass constraints to maintain uninterrupted context between autonomous agents.",
+      "Optimize build processes and containerized deployments to eliminate environment inconsistencies across staging and production.",
+    ],
     technologies: ["React", "Redux", "Jest", "Cypress"],
     current: false,
   },
   {
-    period: "2019 — 2020",
-    role: "Junior Developer",
+    period: "Nov 2025 - Present",
+    role: "Digital Architecture & Branding",
     company: "StartUp Labs",
     description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
+      "Directing digital brand architecture and developing custom web solutions for commercial entities, ensuring technical superiority aligns seamlessly with high-end visual identity.",
+    responsibilities: [
+      "Develop full-stack web platforms and specialized portals (e.g., Canine Care Division) for commercial agricultural enterprises like Astro Integrated Farms.",
+      "Direct high-definition asset generation and visual branding to ensure technical and aesthetic cohesion across all touchpoints.",
+      "Modernize legacy digital footprints to improve client acquisition and establish professional industry authority.",
+      "Bridge the gap between frontend user experience (UI/UX) and complex backend logic for non-technical stakeholders.",
+    ],
     technologies: ["React", "Node.js", "MongoDB", "AWS"],
     current: false,
   },
   {
     period: "2018 — 2019",
     role: "Freelance Developer",
-    company: "Self-Employed",
+    company: "Remote Jobs",
     description:
       "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
+    responsibilities: [
+      "Develop full-stack web platforms and specialized portals (e.g., Canine Care Division) for commercial agricultural enterprises like Astro Integrated Farms.",
+      "Direct high-definition asset generation and visual branding to ensure technical and aesthetic cohesion across all touchpoints.",
+      "Modernize legacy digital footprints to improve client acquisition and establish professional industry authority.",
+      "Bridge the gap between frontend user experience (UI/UX) and complex backend logic for non-technical stakeholders.",
+    ],
     technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
     current: false,
   },
@@ -113,6 +137,13 @@ export const Experience = () => {
                     <p className="text-sm text-muted-foreground mt-4">
                       {exp.description}
                     </p>
+                    <ul className="text-sm text-muted-foreground mt-4 space-y-2 list-disc list-inside md:list-outside pl-0 md:pl-4">
+                      {exp.responsibilities.map((responsibility, respIdx) => (
+                        <li key={respIdx} className="leading-relaxed">
+                          {responsibility}
+                        </li>
+                      ))}
+                    </ul>
                     <div
                       className={`flex flex-wrap gap-2 mt-4 ${
                         idx % 2 === 0 ? "md:justify-end" : ""

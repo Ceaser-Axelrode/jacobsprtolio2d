@@ -2,29 +2,29 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Swallowed Star (Enterprise Affiliate Platform)",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+      "Architected a 50-page digital affiliate dashboard from the ground up using Next.js and Supabase. Engineered secure user verification, custom payment routing, and optimized database queries to maintain speed under heavy load.",
     image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
+    tags: ["Next.js", "Supabase", "Tailwind","inngest","shadcn","typescript"],
     link: "#",
     github: "#",
   },
   {
-    title: "E-Commerce Platform",
+    title: "OpenClaw Multi-Agent AI Framework",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+      "Deployed a localized multi-agent reasoning system. Provisioned a 24GB Oracle Cloud Linux server to handle complex AI routing, bypassing strict networking constraints to keep autonomous agents communicating without dropping context.",
     image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+    tags: ["Node  .js", "Oracle Cloud", "Linux", "typescript"],
     link: "#",
     github: "#",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Full-Stack Fitness Ecosystem (Web App & API)",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+      "Architected a decoupled fitness platform for local gym deployment. Built a responsive web frontend that consumes a custom, serverless RESTful API (Node.js/Express). Engineered to handle dynamic training logic and track user metrics, with a scalable architecture designed for a future React Native mobile port.",
     image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
+    tags: ["React", "Node.js", "Express", "PostgreSQL"],
     link: "#",
     github: "#",
   },

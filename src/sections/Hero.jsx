@@ -76,10 +76,10 @@ export const Hero = () => {
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Architecting <span className="text-primary glow-text">Infrastructure</span>
-                <br />
-                That Scale Under Pressure And Power Modern Web 
+              <h1 className="text-3xl md:text-6xl lg:text-5xl font-bold leading-tight animate-fade-in animation-delay-100">
+                Architecting <span className="text-primary glow-text lg:text-4xl">Infrastructure</span>
+                <br/>
+                That Scale Under Pressure And Power Modern Web <br/>
                 
                 <span className="font-serif italic font-normal text-white">
                   Enterprises.
