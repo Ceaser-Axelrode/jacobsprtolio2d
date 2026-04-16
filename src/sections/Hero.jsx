@@ -1,4 +1,4 @@
-import { Button } from "@/components/Button";
+import { Button } from '@/components/Button';
 import {
   ArrowRight,
   ChevronDown,
@@ -6,30 +6,29 @@ import {
   Linkedin,
   Twitter,
   Download,
-} from "lucide-react";
-import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+} from 'lucide-react';
+import { AnimatedBorderButton } from '../components/AnimatedBorderButton';
 
 const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Node.js",
-  "GraphQL",
-  "PostgreSQL",
-  "MongoDB",
-  "Redis",
-  "OracleCloud",
-  "Docker",
-  "AWS",
-  "Vercel",
-  "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
-  "Git",
-  "GitHub Actions",
-  
+  'React',
+  'Next.js',
+  'TypeScript',
+  'Node.js',
+  'GraphQL',
+  'PostgreSQL',
+  'MongoDB',
+  'Redis',
+  'OracleCloud',
+  'Docker',
+  'AWS',
+  'Vercel',
+  'Tailwind CSS',
+  'Prisma',
+  'Jest',
+  'Cypress',
+  'Figma',
+  'Git',
+  'GitHub Actions',
 ];
 
 export const Hero = () => {
@@ -39,8 +38,10 @@ export const Hero = () => {
       <div className="absolute inset-0">
         <img
           src="/hero-bg.jpg"
-          alt="Hero image"
+          alt="Hero background"
           className="w-full h-full object-cover opacity-40"
+          loading="eager"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
       </div>
@@ -51,7 +52,7 @@ export const Hero = () => {
           <div
             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
             style={{
-              backgroundColor: "#20B2A6",
+              backgroundColor: '#20B2A6',
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
               animation: `slow-drift ${
@@ -78,20 +79,21 @@ export const Hero = () => {
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-3xl md:text-6xl lg:text-5xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Architecting <span className="text-primary glow-text lg:text-4xl">Infrastructure</span>
-                <br/>
-                That Scale Under Pressure And Power Modern Web <br/>
-                
+                Architecting{' '}
+                <span className="text-primary glow-text lg:text-4xl">
+                  Infrastructure
+                </span>
+                <br />
+                That Scale Under Pressure And Power Modern Web <br />
                 <span className="font-serif italic font-normal text-white">
                   Enterprises.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-              Welcome to Jacob Tech Labs. <br />
-              We engineer high performance web applications,
-              multi agent AI framworks, and secure serverless
-              architectures using Next.js and Node.js.
-              Built on the principles of mechanical engineering
+                Welcome to Jacob Tech Labs. <br />
+                We engineer high performance web applications, multi agent AI
+                framworks, and secure serverless architectures using Next.js and
+                Node.js. Built on the principles of mechanical engineering
               </p>
             </div>
 
@@ -102,8 +104,10 @@ export const Hero = () => {
                   Contact Me <ArrowRight className="w-5 h-5" />
                 </Button>
               </a>
-              <a href="/Uprojects/Victor_FullStack_Architect.pdf" 
-                  download="Victor_FullStack_Architect.pdf">
+              <a
+                href="/Uprojects/Victor_FullStack_Architect.pdf"
+                download="Victor_FullStack_Architect.pdf"
+              >
                 <AnimatedBorderButton>
                   <Download className="w-5 h-5" />
                   Download CV
@@ -115,9 +119,12 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Github, href: "https://github.com/JacobTechLabs" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/jacobtechlabs" },
-                { icon: Twitter, href: "https://x.com/Chrisfubara" },
+                { icon: Github, href: 'https://github.com/JacobTechLabs' },
+                {
+                  icon: Linkedin,
+                  href: 'https://www.linkedin.com/in/jacobtechlabs',
+                },
+                { icon: Twitter, href: 'https://x.com/Chrisfubara' },
               ].map((social, idx) => (
                 <a
                   key={idx}
@@ -141,9 +148,11 @@ export const Hero = () => {
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/Uprojects/Fubara.png"
-                  alt="Victor Jacob"
+                  src="/Uprojects/Fubara.webp"
+                  alt="Victor Jacob - Full-Stack Web Architect"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
+                  loading="eager"
+                  decoding="async"
                 />
 
                 {/* Floating Badge */}

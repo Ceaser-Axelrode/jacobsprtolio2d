@@ -1,0 +1,24 @@
+# Security Policy for Jacob Tech Labs
+# https://securitytxt.org/
+
+# Contact Information
+Contact: mailto:support@jacobtechlabs.xyz
+Contact: https://jacobtechlabs.xyz/#contact
+
+# Acknowledgments
+Acknowledgments: https://jacobtechlabs.xyz/#contact
+
+# Preferred Languages
+Preferred-Languages: en
+
+# Canonical URI
+Canonical: https://jacobtechlabs.xyz/.well-known/security.txt
+
+# Expiration Date
+Expires: 2027-04-16T00:00:00.000Z
+
+# Policy
+Policy: https://jacobtechlabs.xyz/terms-of-service
+
+# Hiring
+Hiring: https://jacobtechlabs.xyz/#contact

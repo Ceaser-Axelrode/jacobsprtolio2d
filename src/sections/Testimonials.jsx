@@ -1,30 +1,27 @@
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
-import { useState } from "react";
+import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { useState } from 'react';
 
 const testimonials = [
   {
     quote:
-      "Jacob Tech Labs completely modernized our digital infrastructure. From developing the web architecture for our specialized canine division to executing the high-definition commercial branding for our livestock operations, they deliver reliable, high-end solutions.",
-    author: "I. Ubong",
-    role: "Founder, Astro Integrated Farms",
-    avatar:
-      "/Uprojects/astrofarms.jpeg",
+      'Jacob Tech Labs completely modernized our digital infrastructure. From developing the web architecture for our specialized canine division to executing the high-definition commercial branding for our livestock operations, they deliver reliable, high-end solutions.',
+    author: 'I. Ubong',
+    role: 'Founder, Astro Integrated Farms',
+    avatar: '/Uprojects/astrofarms.jpeg',
   },
   {
     quote:
-      "Executing a brand overhaul with Jacob Tech Labs was a seamless experience. They engineered a unique visual identity and high-impact asset banners, backed by the technical capability to architect a complete custom e-commerce web platform.",
-    author: "T. Johnwill",
-    role: "CEO, Icons Gadgets",
-    avatar:
-      "/Uprojects/iconsgadgets.png",
+      'Executing a brand overhaul with Jacob Tech Labs was a seamless experience. They engineered a unique visual identity and high-impact asset banners, backed by the technical capability to architect a complete custom e-commerce web platform.',
+    author: 'T. Johnwill',
+    role: 'CEO, Icons Gadgets',
+    avatar: '/Uprojects/iconsgadgets.webp',
   },
   {
     quote:
-      "The fitness ecosystem Jacob Tech Labs architected is transformative. As a user, I’ve found the tracking logic and UI to be flawless and highly responsive. It solved major data inconsistencies in our previous training management routine, a Full-Stack Fitness Initiative",
-    author: "Alpha Testers",
-    role: "Bodyz Gym",
-    avatar:
-      "/Uprojects/Bodyz.png",
+      'The fitness ecosystem Jacob Tech Labs architected is transformative. As a user, I’ve found the tracking logic and UI to be flawless and highly responsive. It solved major data inconsistencies in our previous training management routine, a Full-Stack Fitness Initiative',
+    author: 'Alpha Testers',
+    role: 'Bodyz Gym',
+    avatar: '/Uprojects/Bodyz.png',
   },
 ];
 
@@ -37,7 +34,7 @@ export const Testimonials = () => {
 
   const previous = () => {
     setActiveIdx(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
     );
   };
   return (
@@ -68,7 +65,7 @@ export const Testimonials = () => {
           font-bold mt-4 mb-6 animate-fade-in 
           animation-delay-100 text-secondary-foreground"
           >
-            Kind words from{" "}
+            Kind words from{' '}
             <span
               className="font-serif italic 
             font-normal text-white"
@@ -113,6 +110,7 @@ export const Testimonials = () => {
               <button
                 className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
                 onClick={previous}
+                aria-label="Previous testimonial"
               >
                 <ChevronLeft />
               </button>
@@ -123,9 +121,11 @@ export const Testimonials = () => {
                     onClick={() => setActiveIdx(idx)}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
                       idx === activeIdx
-                        ? "w-8 bg-primary"
-                        : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                        ? 'w-8 bg-primary'
+                        : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
                     }`}
+                    aria-label={`Go to testimonial ${idx + 1}`}
+                    aria-current={idx === activeIdx ? 'true' : 'false'}
                   />
                 ))}
               </div>
@@ -133,6 +133,7 @@ export const Testimonials = () => {
               <button
                 onClick={next}
                 className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
+                aria-label="Next testimonial"
               >
                 <ChevronRight />
               </button>

@@ -5,43 +5,43 @@ import {
   Send,
   CheckCircle,
   AlertCircle,
-} from "lucide-react";
-import { Button } from "@/components/Button";
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
+} from 'lucide-react';
+import { Button } from '@/components/Button';
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const contactInfo = [
   {
     icon: Mail,
-    label: "Email",
-    value: "support@jacobtechlabs.xyz",
-    href: "mailto:support@jacobtechlabs.xyz",
+    label: 'Email',
+    value: 'support@jacobtechlabs.xyz',
+    href: 'mailto:support@jacobtechlabs.xyz',
   },
   {
     icon: MapPin,
-    label: "Location",
-    value: "Rivers State, Nigeria",
-    href: "#",
+    label: 'Location',
+    value: 'Rivers State, Nigeria',
+    href: '#',
   },
 ];
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
   const [isLoading, setIsLoading] = useState(false);
   const [submitStatus, setSubmitStatus] = useState({
     type: null, // 'success' or 'error'
-    message: "",
+    message: '',
   });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     setIsLoading(true);
-    setSubmitStatus({ type: null, message: "" });
+    setSubmitStatus({ type: null, message: '' });
     try {
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -49,7 +49,7 @@ export const Contact = () => {
 
       if (!serviceId || !templateId || !publicKey) {
         throw new Error(
-          "EmailJS configuration is missing. Please check your environment variables."
+          'EmailJS configuration is missing. Please check your environment variables.',
         );
       }
 
@@ -61,20 +61,19 @@ export const Contact = () => {
           email: formData.email,
           message: formData.message,
         },
-        publicKey
+        publicKey,
       );
 
       setSubmitStatus({
-        type: "success",
+        type: 'success',
         message: "Message sent successfully! I'll get back to you soon.",
       });
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ name: '', email: '', message: '' });
     } catch (err) {
-      console.error("EmailJS error:", error);
+      console.error('EmailJS error:', err);
       setSubmitStatus({
-        type: "error",
-        message:
-          error.text || "Failed to send message. Please try again later.",
+        type: 'error',
+        message: err.text || 'Failed to send message. Please try again later.',
       });
     } finally {
       setIsLoading(false);
@@ -94,7 +93,7 @@ export const Contact = () => {
             Get In Touch
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-            Let's build{" "}
+            Let's build{' '}
             <span className="font-serif italic font-normal text-white">
               something great.
             </span>
@@ -186,12 +185,12 @@ export const Contact = () => {
                 <div
                   className={`flex items-center gap-3
                      p-4 rounded-xl ${
-                       submitStatus.type === "success"
-                         ? "bg-green-500/10 border border-green-500/20 text-green-400"
-                         : "bg-red-500/10 border border-red-500/20 text-red-400"
+                       submitStatus.type === 'success'
+                         ? 'bg-green-500/10 border border-green-500/20 text-green-400'
+                         : 'bg-red-500/10 border border-red-500/20 text-red-400'
                      }`}
                 >
-                  {submitStatus.type === "success" ? (
+                  {submitStatus.type === 'success' ? (
                     <CheckCircle className="w-5 h-5 flex-shrink-0" />
                   ) : (
                     <AlertCircle className="w-5 h-5 flex-shrink-0" />

@@ -1,32 +1,39 @@
-import { ArrowUpRight, Github } from "lucide-react";
-import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+import { ArrowUpRight, Github } from 'lucide-react';
+import { AnimatedBorderButton } from '@/components/AnimatedBorderButton';
 const projects = [
   {
-    title: "Swallowed Star (Enterprise Affiliate Platform)",
+    title: 'Swallowed Star (Enterprise Affiliate Platform)',
     description:
-      "Architected a 50-page digital affiliate dashboard from the ground up using Next.js and Supabase. Engineered secure user verification, custom payment routing, and optimized database queries to maintain speed under heavy load.",
-    image: "/Uprojects/project1.png",
-    tags: ["Next.js", "Supabase", "Tailwind","inngest","shadcn","typescript"],
-    link: "#",
-    github: "#",
+      'Architected a 50-page digital affiliate dashboard from the ground up using Next.js and Supabase. Engineered secure user verification, custom payment routing, and optimized database queries to maintain speed under heavy load.',
+    image: '/Uprojects/project1.webp',
+    tags: [
+      'Next.js',
+      'Supabase',
+      'Tailwind',
+      'inngest',
+      'shadcn',
+      'typescript',
+    ],
+    link: '#',
+    github: '#',
   },
   {
-    title: "OpenClaw Multi-Agent AI Framework",
+    title: 'OpenClaw Multi-Agent AI Framework',
     description:
-      "Deployed a localized multi-agent reasoning system. Provisioned a 24GB Oracle Cloud Linux server to handle complex AI routing, bypassing strict networking constraints to keep autonomous agents communicating without dropping context.",
-    image: "/Uprojects/project2.png",
-    tags: ["Node  .js", "Oracle Cloud", "Linux", "typescript"],
-    link: "#",
-    github: "#",
+      'Deployed a localized multi-agent reasoning system. Provisioned a 24GB Oracle Cloud Linux server to handle complex AI routing, bypassing strict networking constraints to keep autonomous agents communicating without dropping context.',
+    image: '/Uprojects/project2.webp',
+    tags: ['Node  .js', 'Oracle Cloud', 'Linux', 'typescript'],
+    link: '#',
+    github: '#',
   },
   {
-    title: "Full-Stack Fitness Ecosystem (Web App & API)",
+    title: 'Full-Stack Fitness Ecosystem (Web App & API)',
     description:
-      "Architected a decoupled fitness platform for local gym deployment. Built a responsive web frontend that consumes a custom, serverless RESTful API (Node.js/Express). Engineered to handle dynamic training logic and track user metrics, with a scalable architecture designed for a future React Native mobile port.",
-    image: "/Uprojects/project3.png",
-    tags: ["React", "Node.js", "Express", "PostgreSQL"],
-    link: "#",
-    github: "#",
+      'Architected a decoupled fitness platform for local gym deployment. Built a responsive web frontend that consumes a custom, serverless RESTful API (Node.js/Express). Engineered to handle dynamic training logic and track user metrics, with a scalable architecture designed for a future React Native mobile port.',
+    image: '/Uprojects/project3.webp',
+    tags: ['React', 'Node.js', 'Express', 'PostgreSQL'],
+    link: '#',
+    github: '#',
   },
   // {
   //   title: "Project Management Tool",
@@ -54,7 +61,7 @@ export const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
             Projects that
             <span className="font-serif italic font-normal text-white">
-              {" "}
+              {' '}
               make an impact.
             </span>
           </h2>
@@ -76,8 +83,10 @@ export const Projects = () => {
               <div className="relative overflow-hidden aspect-video">
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={`Screenshot of ${project.title} project`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div
                   className="absolute inset-0 
@@ -135,11 +144,14 @@ export const Projects = () => {
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
           <AnimatedBorderButton>
-            <a href="https://fubara-tech-hub.vercel.app/" target="_blank" className="text-sm md:text-base hover:underline">
+            <a
+              href="https://fubara-tech-hub.vercel.app/"
+              target="_blank"
+              className="text-sm md:text-base hover:underline"
+            >
               View All Projects
             </a>
             <ArrowUpRight className="w-5 h-5" />
-            
           </AnimatedBorderButton>
         </div>
       </div>

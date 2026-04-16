@@ -1,16 +1,25 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Twitter } from 'lucide-react';
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/JacobTechLabs", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/jacobtechlabs", label: "LinkedIn" },
-  { icon: Twitter, href: "https://x.com/Chrisfubara", label: "Twitter" },
+  { icon: Github, href: 'https://github.com/JacobTechLabs', label: 'GitHub' },
+  {
+    icon: Linkedin,
+    href: 'https://www.linkedin.com/in/jacobtechlabs',
+    label: 'LinkedIn',
+  },
+  { icon: Twitter, href: 'https://x.com/Chrisfubara', label: 'Twitter' },
 ];
 
 const footerLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#contact", label: "Contact" },
+  { href: '#about', label: 'About' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#contact', label: 'Contact' },
+];
+
+const legalLinks = [
+  { href: '/privacy-policy', label: 'Privacy Policy' },
+  { href: '/terms-of-service', label: 'Terms of Service' },
 ];
 
 export const Footer = () => {
@@ -31,17 +40,32 @@ export const Footer = () => {
           </div>
 
           {/* Links */}
-          <nav className="flex flex-wrap justify-center gap-6">
-            {footerLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
+          <div className="flex flex-col items-center gap-4">
+            <nav className="flex flex-wrap justify-center gap-6">
+              {footerLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+
+            {/* Legal Links */}
+            <nav className="flex flex-wrap justify-center gap-4">
+              {legalLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-xs text-muted-foreground/60 hover:text-primary transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+          </div>
 
           {/* Social Links */}
           <div className="flex items-center gap-4">

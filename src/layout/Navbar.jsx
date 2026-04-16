@@ -1,12 +1,12 @@
-import { Button } from "@/components/Button";
-import { Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { Button } from '@/components/Button';
+import { Menu, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: '#about', label: 'About' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#testimonials', label: 'Testimonials' },
 ];
 
 export const Navbar = () => {
@@ -18,15 +18,15 @@ export const Navbar = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 transition-all duration-500 ${
-        isScrolled ? "glass-strong py-3" : "bg-transparent py-5"
+        isScrolled ? 'glass-strong py-3' : 'bg-transparent py-5'
       }  z-50`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
@@ -61,6 +61,9 @@ export const Navbar = () => {
         <button
           className="md:hidden p-2 text-foreground cursor-pointer"
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="mobile-menu"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -68,7 +71,10 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden glass-strong animate-fade-in">
+        <div
+          id="mobile-menu"
+          className="md:hidden glass-strong animate-fade-in"
+        >
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link, index) => (
               <a
