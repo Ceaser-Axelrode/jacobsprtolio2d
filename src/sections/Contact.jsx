@@ -14,8 +14,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'support@jacobtechlabs.xyz',
-    href: 'mailto:support@jacobtechlabs.xyz',
+    value: 'hello@jacobtechlabs.xyz',
+    href: 'mailto:hello@jacobtechlabs.xyz',
   },
   {
     icon: MapPin,
