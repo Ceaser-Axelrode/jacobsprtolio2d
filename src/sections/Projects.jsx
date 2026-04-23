@@ -14,8 +14,8 @@ const projects = [
       'shadcn',
       'typescript',
     ],
-    link: '#',
-    github: '#',
+    link: 'https://swallowed-star-rose.vercel.app/',
+    github: 'https://github.com/JacobTechLabs/Swallowed_Star',
   },
   {
     title: 'OpenClaw Multi-Agent AI Framework',
@@ -32,18 +32,26 @@ const projects = [
       'Architected a decoupled fitness platform for local gym deployment. Built a responsive web frontend that consumes a custom, serverless RESTful API (Node.js/Express). Engineered to handle dynamic training logic and track user metrics, with a scalable architecture designed for a future React Native mobile port.',
     image: '/Uprojects/project3.webp',
     tags: ['React', 'Node.js', 'Express', 'PostgreSQL'],
-    link: '#',
-    github: '#',
+    link: 'https://bodyz-gym.vercel.app/',
+    github: 'https://github.com/JacobTechLabs/Bodyz-Gym.git',
   },
-  // {
-  //   title: "Project Management Tool",
-  //   description:
-  //     "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-  //   image: "/projects/project4.png",
-  //   tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-  //   link: "#",
-  //   github: "#",
-  // },
+  {
+    title: 'JacobTechLabs Fitness API',
+    description:
+      "A specialized RESTful API engineered to serve as a central intelligence hub for fitness applications.  It provides high-performance access to 5,000+ structured fitness exercises using a local data architecture for maximum speed, low latencyand deployed on custom oracle cloud infrastructure to ensure 99.9% uptime. It features a sophisticated exercise-logic engine that delivers structured workout data alongside a library of optimized instructional GIFs. Designed with a 'Headless' philosophy, allowing it to provide real-time data to web, iOS, Android, and wearable devices simultaneously.",
+    image: '/Uprojects/project4.png',
+    tags: [
+      'Bun',
+      'Hono',
+      'TypeScript',
+      'OpenAPI 3.1',
+      'Scalar',
+      'Fuse.js',
+      'Oracle Cloud',
+    ],
+    link: 'https://api.jacobtechlabs.xyz/docs',
+    github: 'https://github.com/JacobTechLabs/Jacobtechlabs-zeus.git',
+  },
 ];
 
 export const Projects = () => {
